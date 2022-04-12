@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="currencyDiv">
+        <input type="text" data-input="left" [value]="leftInput" (input)="changeValue($event)" required>
+        <select required name="currency" id="currency" data-input="left" (change)="changeCurrency($event)">
+            <option value=".">Choose currency</option>
+            <option value="uah">UAH</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+        </select>
+    </div>
+    
+    <p>=</p>
+
+    <div class="currencyDiv">
+        <input type="text" data-input="right" [value]="rightInput" (input)="changeValue($event)" required>
+        <select required name="currency" id="currency" data-input="right" (change)="changeCurrency($event)">
+            <option value=".">Choose currency</option>
+            <option value="uah">UAH</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+        </select>
+    </div>
+    
+</div>
